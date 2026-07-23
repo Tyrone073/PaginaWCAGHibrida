@@ -15,78 +15,6 @@
     box-sizing:border-box;
 }
 
-/*!*CONFIGURACION GENERAL*!*/
-
-/*body{*/
-/*    font-family: "Segoe UI", Arial, sans-serif;*/
-/*    background: var(--bg);*/
-/*    color: var(--navy);*/
-/*}*/
-/*header{*/
-/*    background: var(--blue);*/
-/*    display:flex;*/
-/*    align-items:center;*/
-/*    justify-content:space-between;*/
-/*    padding: 18px 40px;*/
-/*}*/
-/*.logo{*/
-/*    display:flex;*/
-/*    align-items:center;*/
-/*    gap:14px;*/
-/*    color:#fff;*/
-/*}*/
-
-/*!* cuadro donde esta el logo de portoviejo *!*/
-/*.logo img{*/
-/*    width:46px;*/
-/*    height:56px;*/
-/*    background:rgba(255,255,255,0.15);*/
-/*    border-radius:10px;*/
-/*    display:flex;*/
-/*    align-items:center;*/
-/*    justify-content:center;*/
-/*    font-size:24px;*/
-/*}*/
-/*!* nombre principal *!*/
-/*.logo-text .title{*/
-/*    font-weight:800;*/
-/*    font-size:20px;*/
-/*    letter-spacing:0.5px;*/
-/*}*/
-/*!* texto pequeño *!*/
-/*.logo-text .subtitle{*/
-/*    font-size:12px;*/
-/*    opacity:0.9;*/
-/*    letter-spacing:0.5px;*/
-/*}*/
-
-/*!* boton ayuda*!*/
-/*.help-btn{*/
-/*    background:white;*/
-/*    color:var(--blue);*/
-/*    border-radius:999px;*/
-/*    padding:12px 26px;*/
-/*    font-size:17px;*/
-/*    font-weight:700;*/
-/*    display:flex;*/
-/*    align-items:center;*/
-/*    gap:8px;*/
-/*    cursor:pointer;*/
-
-/*}*/
-/*!* círculo con el signo ? *!*/
-/*.help-btn .q{*/
-/*    width:22px;*/
-/*    height:22px;*/
-/*    background:var(--blue);*/
-/*    color:white;*/
-/*    border-radius:50%;*/
-/*    display:flex;*/
-/*    justify-content:center;*/
-/*    align-items:center;*/
-/*    font-size:14px;*/
-/*}*/
-
 main{
     max-width: 1100px;
     margin: 0 auto;
@@ -131,7 +59,7 @@ h1{
 .search-wrap input{
     width:100%;
     padding: 20px 24px 20px 58px;
-    font-size:19px;
+    font-size:22px;
     border-radius: 999px;
     border: 2px solid var(--blue);
     outline:none;
@@ -260,13 +188,11 @@ h1{
     margin-bottom:4px;
     color: var(--navy);
 }
-
 /* texto */
 .bubble .bubble-sub{
     font-size:14px;
     color: var(--gray-text);
 }
-
 /*  MICROFONO */
 .mic-wrap{
     position:relative;
@@ -274,7 +200,6 @@ h1{
     align-items:center;
     justify-content:center;
 }
-
 /* boton circular del microfono */
 .mic-btn{
     width: 130px; height:130px;
@@ -289,7 +214,6 @@ h1{
     color:#fff;
     flex-shrink:0;
 }
-
 /* tamaño del icono */
 .mic-btn i{
     font-size:52px;
@@ -310,7 +234,7 @@ h1{
 
 /*IMAGEN DEL ASISTENTE*/
 .avatar{
-    width: 400px;
+    width: 50%;
     flex-shrink:0;
 }
 .avatar img{

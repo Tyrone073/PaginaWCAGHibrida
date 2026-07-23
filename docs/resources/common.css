@@ -82,6 +82,7 @@ header{
   cursor:pointer;
 
 }
+
 /* círculo con el signo ? */
 .help-btn .q{
   width:22px;
@@ -94,87 +95,9 @@ header{
   align-items:center;
   font-size:14px;
 }
-/*a{ color:inherit; }*/
-
-/*!* Accesibilidad: salto de contenido y foco visible *!*/
-/*.skip-link{*/
-/*  position:absolute; left:-999px; top:0;*/
-/*  background:#fff; color:var(--navy); padding:14px 22px;*/
-/*  z-index:200; border-radius:0 0 10px 0; font-weight:700;*/
-/*}*/
-/*.skip-link:focus{ left:0; }*/
-/*a:focus-visible, button:focus-visible{*/
-/*  outline: 3px solid var(--navy);*/
-/*  outline-offset:3px;*/
-/*}*/
-
-/*!* Encabezado, igual en todas las páginas *!*/
-/*header{*/
-/*  background: var(--blue);*/
-/*  display:flex;*/
-/*  align-items:center;*/
-/*  justify-content:space-between;*/
-/*  padding: 18px 40px;*/
-/*}*/
-/*.logo{*/
-/*  display:flex; align-items:center; gap:14px;*/
-/*  color:#fff; text-decoration:none;*/
-/*}*/
-/*.logo-icon{*/
-/*  width:46px;height:46px;*/
-/*  background:rgba(255,255,255,0.15);*/
-/*  border-radius:10px;*/
-/*  display:flex;align-items:center;justify-content:center;*/
-/*  font-size:24px;*/
-/*}*/
-/*.logo-text .title{ font-weight:800; font-size:20px; letter-spacing:0.5px; }*/
-/*.logo-text .subtitle{ font-size:12px; opacity:0.9; letter-spacing:0.5px; }*/
-/*.help-btn{*/
-/*  background:#fff; color: var(--blue); border:none; border-radius: 999px;*/
-/*  padding: 12px 26px; font-size: 17px; font-weight:700;*/
-/*  display:flex; align-items:center; gap:8px; cursor:pointer;*/
-/*}*/
-/*.help-btn .q{*/
-/*  background: var(--blue); color:#fff; width:22px;height:22px; border-radius:50%;*/
-/*  display:flex;align-items:center;justify-content:center; font-size:14px;*/
-/*}*/
-
-/*!* Enlace "volver al inicio", usado en las subpáginas *!*/
-/*.back-link{*/
-/*  display:inline-flex; align-items:center; gap:10px;*/
-/*  font-size:18px; font-weight:700; color: var(--blue);*/
-/*  text-decoration:none; margin-bottom: 26px; padding:10px 6px;*/
-/*}*/
-/*.back-link svg{ width:22px; height:22px; }*/
-
-/*!* Asistente de voz flotante, igual en todas las subpáginas *!*/
-/*.float-assistant{*/
-/*  position:fixed; right:26px; bottom:26px; z-index:100;*/
-/*  display:flex; align-items:center; gap:14px;*/
-/*}*/
-/*.float-bubble{*/
-/*  background:#fff; border:1px solid var(--border); border-radius:14px;*/
-/*  padding:12px 18px; font-size:15px; font-weight:700; color:var(--navy);*/
-/*  box-shadow: 0 4px 12px rgba(0,0,0,0.12); max-width:170px;*/
-/*}*/
-/*.float-mic{*/
-/*  width:78px; height:78px; border-radius:50%;*/
-/*  background: var(--blue); border:none; color:#fff;*/
-/*  display:flex; align-items:center; justify-content:center;*/
-/*  box-shadow: 0 0 0 6px rgba(26,79,180,0.15), 0 6px 16px rgba(0,0,0,0.2);*/
-/*  cursor:pointer; flex-shrink:0;*/
-/*}*/
-/*.float-mic svg{ width:34px; height:34px; }*/
 
 @media (max-width: 700px){
   header{
     padding:14px 18px;
-  }
-  .float-bubble{
-    display:none;
-  }
-  .float-assistant{
-    right:16px;
-    bottom:16px;
   }
 }

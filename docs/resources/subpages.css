@@ -4,6 +4,19 @@ main{
   padding: 40px 30px 120px;
 }
 
+.back-link{
+  width:150px;
+  height:50px;
+  border-radius:18px;
+  background:var(--blue);
+  display: flex;
+  align-items:center;
+  justify-content:center;
+}
+.back-link i, h3{
+  font-size:18px;
+}
+
 .page-head{
   text-align:center;
   margin-bottom: 36px;
@@ -18,7 +31,8 @@ main{
   align-items:center;
   justify-content:center;
 }
-.page-icon i{ font-size:32px;
+.page-icon i{
+  font-size:32px;
   color:#fff;
 }
 
@@ -27,8 +41,8 @@ h1{ font-size: 38px;
   font-weight:900;
 }
 
-.page-sub{ color: var(--gray-text);
-  font-size:19px;
+.page-desc{ color: var(--gray-text);
+  font-size:22px;
   max-width:640px;
   margin:0 auto;
 }
@@ -69,14 +83,54 @@ h1{ font-size: 38px;
   color:#fff;
 }
 .card-name{
-  font-size:21px;
+  font-size:22px;
   font-weight:800;
   margin-bottom:6px;
 }
 .card-desc{
-  font-size:16px;
+  font-size:18px;
   color: var(--gray-text);
 }
+
+
+/* Asistente de voz flotante, igual en todas las subpáginas */
+.float-assistant{
+  position:fixed;
+  right:26px;
+  bottom:26px;
+  z-index:100;
+  display:flex; align-items:center; gap:14px;
+}
+/*burbuja de texto*/
+.float-bubble{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:14px;
+  padding:12px 18px;
+  font-size:15px;
+  font-weight:700;
+  color:var(--navy);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  max-width:170px;
+}
+.float-avatar{
+  width:78px;
+  height:78px;
+  border-radius:50%;
+  background: var(--blue); border:none;
+  color:#fff;
+  /*display:flex;*/
+  align-items:center;
+  justify-content:center;
+  box-shadow: 0 0 0 6px rgba(26,79,180,0.15), 0 6px 16px rgba(0,0,0,0.2);
+  cursor:pointer;
+  flex-shrink:0;
+}
+.float-avatar img{
+  width:100%;
+  height:100%;
+}
+
 
 /* Clases de color reutilizables para el icono de cabecera y las tarjetas */
 .tone-green{ background: linear-gradient(180deg, var(--green), var(--green-dark)); }
@@ -89,5 +143,14 @@ h1{ font-size: 38px;
 .tone-gold{ background: linear-gradient(180deg, var(--gold), var(--gold-dark)); }
 
 @media (max-width: 700px){
-  h1{ font-size:28px; }
+  h1{
+    font-size:28px;
+  }
+  /*.float-bubble{*/
+  /*  display:none;*/
+  /*}*/
+  .float-assistant{
+    right:16px;
+    bottom:16px;
+  }
 }
