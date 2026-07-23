@@ -202,7 +202,8 @@ h1{
 }
 /* boton circular del microfono */
 .mic-btn{
-    width: 130px; height:130px;
+    width: 130px;
+    height:130px;
     border-radius:50%;
     background: var(--blue);
     border: none;
@@ -235,6 +236,7 @@ h1{
 /*IMAGEN DEL ASISTENTE*/
 .avatar{
     width: 50%;
+    min-width: 300px;
     flex-shrink:0;
 }
 .avatar img{
