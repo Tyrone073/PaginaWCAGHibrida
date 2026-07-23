@@ -1,0 +1,93 @@
+main{
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 40px 30px 120px;
+}
+
+.page-head{
+  text-align:center;
+  margin-bottom: 36px;
+}
+
+.page-icon{
+  width:74px;
+  height:74px;
+  border-radius:18px;
+  margin:0 auto 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.page-icon i{ font-size:32px;
+  color:#fff;
+}
+
+h1{ font-size: 38px;
+  margin: 0 0 10px;
+  font-weight:900;
+}
+
+.page-sub{ color: var(--gray-text);
+  font-size:19px;
+  max-width:640px;
+  margin:0 auto;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 22px;
+  margin-top: 36px;
+}
+.card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius: 18px;
+  padding: 30px 22px;
+  text-align:center;
+  text-decoration:none;
+  color:var(--navy);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.card:hover{ transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
+}
+
+.card-icon{
+  width:70px;
+  height:70px;
+  border-radius:50%;
+  margin: 0 auto 16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.card-icon i{
+  font-size:28px;
+  color:#fff;
+}
+.card-name{
+  font-size:21px;
+  font-weight:800;
+  margin-bottom:6px;
+}
+.card-desc{
+  font-size:16px;
+  color: var(--gray-text);
+}
+
+/* Clases de color reutilizables para el icono de cabecera y las tarjetas */
+.tone-green{ background: linear-gradient(180deg, var(--green), var(--green-dark)); }
+.tone-orange{ background: linear-gradient(180deg, var(--orange), var(--orange-dark)); }
+.tone-blue{ background: linear-gradient(180deg, var(--blue), #123a8c); }
+.tone-lightblue{ background: linear-gradient(180deg, #4aa3d1, #2c7ba8); }
+.tone-red{ background: linear-gradient(180deg, var(--red), var(--red-dark)); }
+.tone-teal{ background: linear-gradient(180deg, var(--teal), var(--teal-dark)); }
+.tone-cyan{ background: linear-gradient(180deg, var(--cyan), var(--cyan-dark)); }
+.tone-gold{ background: linear-gradient(180deg, var(--gold), var(--gold-dark)); }
+
+@media (max-width: 700px){
+  h1{ font-size:28px; }
+}
