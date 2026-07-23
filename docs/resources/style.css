@@ -112,11 +112,7 @@ h1{
     box-shadow: 0 10px 20px rgba(0,0,0,0.16);
 }
 
-/* resalta el botón cuando se navega con teclado */
-.cat-btn:focus-visible{
-    outline: 3px solid var(--navy);
-    outline-offset:3px;
-}
+
 
 /* tamaño de los iconos */
 .cat-btn i{

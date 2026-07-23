@@ -96,6 +96,14 @@ header{
   font-size:14px;
 }
 
+/* resalta el boton cuando se navega con teclado (tecla Tab)*/
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 3px solid var(--navy);
+  outline-offset: 3px;
+}
+
 @media (max-width: 700px){
   header{
     padding:14px 18px;

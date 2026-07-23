@@ -12,6 +12,7 @@ main{
   display: flex;
   align-items:center;
   justify-content:center;
+  gap: 3px;
 }
 .back-link i, h3{
   font-size:18px;
@@ -64,6 +65,7 @@ h1{ font-size: 38px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.05);
   transition: transform .15s ease, box-shadow .15s ease;
 }
+/* efecto al pasar el mouse */
 .card:hover{ transform: translateY(-4px);
   box-shadow: 0 10px 20px rgba(0,0,0,0.12);
 }

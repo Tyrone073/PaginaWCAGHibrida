@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Servicios para Adultos Mayores - Portoviejo</title>
+  <title>Servicios para Adultos Mayores de Portoviejo</title>
   <link rel="stylesheet" href="resources/reset.css">
   <link rel="stylesheet" href="resources/style.css">
   <link rel="stylesheet" href="resources/common.css">
@@ -12,14 +12,17 @@
 <body>
 
 <header>
-  <a class="logo" href="index.html">
-    <img src="resources/imagenes/Escudo_de_Portoviejo.png" alt="Escudo de Portoviejo">
+  <a class="logo" href="index.html" aria-label="Ir a la página principal">
+    <img src="resources/imagenes/Escudo_de_Portoviejo.png" alt="Escudo-Portoviejo">
     <div class="logo-text">
-      <div class="title">PORTOVIEJO</div>
-      <div class="subtitle">ALCALDÍA DE PORTOVIEJO</div>
+      <p class="title">PORTOVIEJO</p>
+      <p class="subtitle">ALCALDÍA DE PORTOVIEJO</p>
     </div>
   </a>
-  <button class="help-btn"><span class="q">?</span> Ayuda</button>
+  <button class="help-btn">
+    <span class="q" aria-hidden="true">?</span>
+    <p>Ayuda</p>
+  </button>
 </header>
 
 <main>
@@ -32,32 +35,34 @@
 
   <div class="search-wrap">
     <span class="icon">
-      <img src="resources/imagenes/lupa.png" alt="Buscar">
+      <img src="resources/imagenes/lupa.png" alt="" aria-hidden="true">
     </span>
-    <input type="text" placeholder="Buscar servicios...">
+
+    <label for="buscar" class="sr-only">Buscar servicios</label>
+    <input id="buscar" type="text" placeholder="Buscar servicios...">
   </div>
 
   <div class="categories">
     <a href="salud.html" class="cat-btn cat-salud">
-      <i class="fa-solid fa-heart-pulse"></i>
-      Salud
+      <i class="fa-solid fa-heart-pulse" aria-hidden="true"></i>
+      <p>Salud</p>
     </a>
 
     <a href="tramites.html" class="cat-btn cat-tramites">
-      <i class="fa-solid fa-file-lines"></i>
-      Trámites
+      <i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+      <p>Trámites</p>
     </a>
 
     <a href="transporte.html" class="cat-btn cat-transporte">
-      <i class="fa-solid fa-bus"></i>
-      Transporte
+      <i class="fa-solid fa-bus" aria-hidden="true"></i>
+      <p>Transporte</p>
     </a>
   </div>
 
   <div class="assistant">
     <div class="bubble">
       <div class="speaker">
-        <i class="fa-solid fa-volume-high"></i>
+        <i class="fa-solid fa-volume-high" aria-hidden="true"></i>
       </div>
       <div>
         <div class="bubble-title">Presione el micrófono y hable</div>
@@ -66,21 +71,21 @@
     </div>
 
     <div class="mic-wrap">
-      <button class="mic-btn" aria-label="Activar micrófono">
-        <i class="fa-solid fa-microphone"></i>
+      <button class="mic-btn" aria-label="Activar microfono">
+        <i class="fa-solid fa-microphone" aria-hidden="true"></i>
       </button>
     </div>
 
     <div class="avatar">
-      <img src="resources/imagenes/Avatar3.png" alt="Asistente">
+      <img src="resources/imagenes/Avatar3.png" alt="Avatar-Asistente">
     </div>
   </div>
 
   <div class="footer-bar">
     <div class="shield">
-      <i class="fa-solid fa-shield-halved"></i>
+      <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
     </div>
-    Información clara, accesible y confiable para usted.
+    <p>Información clara, accesible y confiable para usted.</p>
   </div>
 </main>
 
