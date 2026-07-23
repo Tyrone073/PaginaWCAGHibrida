@@ -1,0 +1,371 @@
+
+:root{/*variables CSS para tener colores especificos y no tan fuertes para las pautas WCAG*/
+    --navy:#0d2159;
+    --blue:#1a4fb4;
+    --blue-light:#eaf1fb;
+    --green:#2e8b3d;
+    --green-dark:#256e30;
+    --orange:#f2931e;
+    --orange-dark:#d97e0f;
+    --gray-text:#5b6472;
+    --border:#c9d6ea;
+    --bg:#fbfcfe;
+}
+*{
+    box-sizing:border-box;
+}
+
+/*CONFIGURACION GENERAL*/
+
+body{
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--navy);
+}
+header{
+    background: var(--blue);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding: 18px 40px;
+}
+.logo{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    color:#fff;
+}
+
+/* cuadro donde esta el logo de portoviejo */
+.logo img{
+    width:46px;
+    height:56px;
+    background:rgba(255,255,255,0.15);
+    border-radius:10px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:24px;
+}
+/* nombre principal */
+.logo-text .title{
+    font-weight:800;
+    font-size:20px;
+    letter-spacing:0.5px;
+}
+/* texto pequeño */
+.logo-text .subtitle{
+    font-size:12px;
+    opacity:0.9;
+    letter-spacing:0.5px;
+}
+
+/* boton ayuda*/
+.help-btn{
+    background:white;
+    color:var(--blue);
+    border-radius:999px;
+    padding:12px 26px;
+    font-size:17px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:8px;
+    cursor:pointer;
+
+}
+/* círculo con el signo ? */
+.help-btn .q{
+    width:22px;
+    height:22px;
+    background:var(--blue);
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:14px;
+}
+
+main{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 50px 30px 40px;
+    text-align:center;
+}
+h1{
+    font-size: 46px;
+    line-height:1.15;
+    margin: 0 0 18px;
+    font-weight:900;
+    color: var(--navy);
+}
+
+/*LINEA DECORATIVA -.-*/
+.divider{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+    margin-bottom: 34px;
+}
+.divider .line{
+    width:70px;
+    height:4px;
+    background: var(--blue);
+    border-radius:2px;
+}
+.divider .dot{
+    width:9px;
+    height:9px;
+    border-radius:50%;
+    background: var(--blue);
+}
+
+/* BARRA DE BUSQUEDA*/
+.search-wrap{
+    max-width: 780px;
+    margin: 0 auto 36px;
+    position:relative;
+}
+.search-wrap input{
+    width:100%;
+    padding: 20px 24px 20px 58px;
+    font-size:19px;
+    border-radius: 999px;
+    border: 2px solid var(--blue);
+    outline:none;
+    color: var(--navy);
+}
+/* color del texto */
+.search-wrap input::placeholder{
+    color:#8a93a3;
+}
+/* icono de busqueda */
+.search-wrap .icon img{
+    position:absolute;
+    left:22px;
+    top:50%;
+    width:20px;
+    height:20px;
+    transform: translateY(-50%);
+    /*color:#8a93a3;*/
+    /*font-size:20px;*/
+}
+
+/*BOTONES DE CATEGORÍAS*/
+.categories{
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    margin-bottom: 42px;
+}
+
+/* estilo general de los botones */
+.cat-btn{
+    border:none;
+    border-radius: 14px;
+    padding: 26px 18px;
+    font-size: 26px;
+    font-weight:800;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:16px;
+    cursor:pointer;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.12);
+    transition: transform .15s ease, box-shadow .15s ease;
+}
+
+/* efecto al pasar el mouse */
+.cat-btn:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.16);
+}
+
+/* resalta el botón cuando se navega con teclado */
+.cat-btn:focus-visible{
+    outline: 3px solid var(--navy);
+    outline-offset:3px;
+}
+
+/* tamaño de los iconos */
+.cat-btn i{
+    font-size:34px;
+    flex-shrink:0;
+}
+
+/* Colores de cada boton */
+.cat-salud{
+    background: linear-gradient(180deg, var(--green), var(--green-dark));
+}
+.cat-tramites{
+    background: linear-gradient(180deg, var(--orange), var(--orange-dark));
+}
+.cat-transporte{
+    background: linear-gradient(180deg, var(--blue), #123a8c);
+}
+
+/*SECCION DEL ASISTENTE*/
+.assistant{
+    position:relative;
+    background: var(--blue-light);
+    border-radius: 40px 40px 0 0;
+    padding: 60px 40px 40px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 40px;
+    overflow:hidden;
+}
+
+/*BURBUJA DE INFORMACION DEL MICROFONO*/
+.bubble{
+    background:#fff;
+    border:1px solid var(--border);
+    border-radius: 18px;
+    padding: 18px 22px;
+    max-width: 300px;
+    text-align:left;
+    display:flex;
+    gap:14px;
+    align-items:flex-start;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+/* div del icono del altavoz */
+.bubble .speaker{
+    background: var(--blue);
+    /*color:#fff;*/
+    width:34px;
+    height:34px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+    font-size:16px;
+}
+/*icono del altavoz*/
+.bubble .speaker i{
+    font-size:20px;
+    color:white;
+}
+
+/* titulo */
+.bubble .bubble-title{
+    font-weight:800;
+    font-size:17px;
+    margin-bottom:4px;
+    color: var(--navy);
+}
+
+/* texto */
+.bubble .bubble-sub{
+    font-size:14px;
+    color: var(--gray-text);
+}
+
+/*  MICROFONO */
+.mic-wrap{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+/* boton circular del microfono */
+.mic-btn{
+    width: 130px; height:130px;
+    border-radius:50%;
+    background: var(--blue);
+    border: none;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    box-shadow: 0 0 0 8px rgba(26,79,180,0.12);
+    color:#fff;
+    flex-shrink:0;
+}
+
+/* tamaño del icono */
+.mic-btn i{
+    font-size:52px;
+    color:white;
+}
+
+/* Navegación con teclado */
+.mic-btn:focus-visible{
+    outline:3px solid var(--navy);
+    outline-offset:4px;
+}
+
+/* Ondas decorativas */
+.sound-wave{
+    color: var(--blue);
+    opacity:0.5;
+}
+
+/*IMAGEN DEL ASISTENTE*/
+.avatar{
+    width: 400px;
+    flex-shrink:0;
+}
+.avatar img{
+    width:100%;
+    height:100%;
+    display:block;
+}
+
+/*BARRA INFERIOR*/
+.footer-bar{
+    background: var(--blue-light);
+    padding: 20px 20px 34px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    font-size:17px;
+    font-weight:700;
+    color: var(--navy);
+}
+
+/* imagen del Escudo */
+.footer-bar .shield{
+    background: var(--blue);
+    /*color:white;*/
+    width:30px;
+    height:30px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-shrink:0;
+}
+.footer-bar .shield i{
+    font-size:20px;
+    color:white;
+}
+
+/*DISEÑO RESPONSIVE*/
+@media (max-width: 800px){
+    h1{
+        font-size:32px;
+    }
+
+    .categories{
+        grid-template-columns: 1fr;
+    }
+
+    .assistant{
+        flex-direction:column;
+        gap:24px;
+    }
+
+    header{
+        padding:14px 18px;
+    }
+}
+
